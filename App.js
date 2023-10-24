@@ -80,7 +80,7 @@ export default function App() {
     <ScrollView keyboardShouldPersistTaps="handled">
       <SafeAreaView style={styles.appContainer}>
         <View style={styles.formContainer}>
-          <Text style={styles.title}>Password Generator</Text>
+          <Text style={styles.title}>Password Generator By Nasim Qureshi</Text>
           <Formik
             initialValues={{ passwordLength: "" }}
             validationSchema={PasswordSchema}
@@ -113,7 +113,7 @@ export default function App() {
                     style={styles.inputStyle}
                     value={values.passwordLength}
                     onChangeText={handleChange("passwordLength")}
-                    placeholder="Ex. 28"
+                    placeholder="Ex. 8"
                     keyboardType="numeric"
                   />
                 </View>
@@ -145,7 +145,7 @@ export default function App() {
                   />
                 </View>
                 <View style={styles.inputWrapper}>
-                  <Text style={styles.heading}>Include Symbols</Text>
+                  <Text style={styles.heading}>Include Special Characters</Text>
                   <BouncyCheckbox
                     disableBuiltInState
                     isChecked={symbols}
